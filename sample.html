@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="clg.jpg" alt="Your Image">();
+            ('a[href^="#"]').forEach(anchor=>
+            {
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetid=
+            this.getAttribute('href').substring(1);
+                    const targetElement=
+            document.getElementById(targetid);
+                    if(targetElement){
+                        window.scrollTo({
+                            top:
+            targetElement.offsetTop,
+                            behavior:'smooth'
+                        });
+                    }
+                });
+            });
+        </div>
+        <div class="right">
+            <div class="info">
+            <p><b>NAME:M.SRI JOTHI LAKSHMI</b></p>
+            <p><b>REG NO:20213021506240</b></p>
+            <P><B>COLLEGE:ARIGNAR ANNA COLLEGE</B></P>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
