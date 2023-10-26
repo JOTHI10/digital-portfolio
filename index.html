@@ -10,7 +10,8 @@
     <div class="container">
         <div class="left">
             <img src="clg.jpg" alt="Your Image">();
-            ('a[href^="#"]').forEach(anchor=>
+            <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>
             {
                 anchor.addEventListener('click',function(e){
                     e.preventDefault();
@@ -27,6 +28,7 @@
                     }
                 });
             });
+            </script>
         </div>
         <div class="right">
             <div class="info">
